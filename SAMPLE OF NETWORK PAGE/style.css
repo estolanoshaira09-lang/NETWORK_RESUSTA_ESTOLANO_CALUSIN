@@ -176,51 +176,96 @@ body {
 }
 
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px) rotateX(5deg);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(5deg);
-  }
-}
-
-
-.gallery-section {
-  text-align: center;
-  background: none;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
-
 #activities {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: linear-gradient(180deg, #f8c8dc 0%, #d9486e 100%);
+  position: relative;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 0 100px;
+  color: white;
+  overflow: hidden;
 }
 
+/* Wave effect at the bottom */
+#activities::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  clip-path: ellipse(70% 100% at 50% 100%);
+}
+
+/* Section title */
 #activities h2 {
   font-size: 2rem;
-  margin-bottom: 30px;
-  color: maroon;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
-.activity-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Container for gallery cards */
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
   gap: 25px;
-  max-width: 1000px;
-  margin: 0 auto;
+  overflow-x: auto;
+  padding: 0 40px;
+  scrollbar-width: none; /* Firefox */
 }
+
+.gallery-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Each gallery card */
+.gallery-card {
+  background: #fff;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+  max-width: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.gallery-card h3 {
+  font-size: 1rem;
+  margin: 15px 0 10px;
+  color: #b22234;
+}
+
+.gallery-card button {
+  background: #b22234;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.gallery-card button:hover {
+  background: #7a1422;
+}
+
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
 
 .why-choose-us {
   background-color: #f7f1e8;
