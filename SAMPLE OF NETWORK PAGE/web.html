@@ -50,34 +50,48 @@
 
 
       
-     <section id="activities">
-  <h2>CLIENTS WE'VE WORKED WITH</h2>
-  <div class="gallery-container">
-    <div class="gallery-card">
-      <img src="../SAMPLE OF NETWORK PAGE/pics/SCITECH.jpg" alt="Skill Development" />
-      <h3>Skill Development</h3>
-      <button>Visit Gallery</button>
-    </div>
+      <section id="activities">
+        <div class="benefit-cards">
+      <div class="card">
+        <img src="../SAMPLE OF NETWORK PAGE/pics/SCITECH.jpg" alt="Skill Development">
+        <h3>Skill Development</h3>
+        <p>
+          Enhance your technical skills and gain practical experience through workshops, coding events, and seminars designed to prepare you for the IT industry.
+        </p>
+        <button>Visit Gallery</button>
+      </div>
 
-    <div class="gallery-card">
-      <img src="../SAMPLE OF NETWORK PAGE/pics/BIT NIGHT.jpg" alt="Community and Collaboration" />
-      <h3>Community & Collaboration</h3>
-      <button>Visit Gallery</button>
-    </div>
+      <div class="card">
+        <img src="../SAMPLE OF NETWORK PAGE/pics/BIT NIGHT.jpg" alt="Community and Collaboration">
+        <h3>Community & Collaboration</h3>
+        <p>
+          Join a supportive circle of BIT students who share your passion for technology, leadership, and growth — where ideas and friendships thrive.
+        </p>
+        <button>Visit Gallery</button>
+      </div>
 
-    <div class="gallery-card">
-      <img src="../SAMPLE OF NETWORK PAGE/pics/SEMINAR.jpg" alt="Career Opportunities" />
-      <h3>Career Opportunities</h3>
-      <button>Visit Gallery</button>
+      <div class="card">
+        <img src="../SAMPLE OF NETWORK PAGE/pics/SEMINAR.jpg" alt="Career Opportunities">
+        <h3>Career Opportunities</h3>
+        <p>
+          Unlock leadership opportunities, mentorship, and networking that will help you grow both professionally and personally.
+        </p>
+        <button>Visit Gallery</button>
+      </div>
     </div>
+  </section>
+    </main>
 
-    <div class="gallery-card">
-      <img src="../SAMPLE OF NETWORK PAGE/pics/WORKSHOP.jpg" alt="Workshop" />
-      <h3>Workshop</h3>
-      <button>Visit Gallery</button>
+   <section id="about">
+  <div class="about-us">
+  
+    <div class="logo-container">
+      <img
+        src="../SAMPLE OF NETWORK PAGE/pics/NETWORK.png"
+        alt="NETWORK Logo"
+        class="big-logo"
+      />
     </div>
-  </div>
-</section>
 
 
 
@@ -110,16 +124,64 @@
 
 
     
-    <footer id="contact">
-      <p>&copy; 2025 NETWORK Organization | Developed for Student Leadership</p>
-    </footer>
+<footer id="contact">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>Sparking Leadership, One Student At A Time.</h3>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> support@network.org</p>
+        <p><i class="fas fa-phone"></i> 1800-1234-5678</p>
+      </div>
+    </div>
 
-    <script>
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Leadership Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        <h4>Get In Touch!</h4>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 NETWORK Organization | Developed for Student Leadership</p>
+    <div class="footer-links-bottom">
+      <a href="#">Privacy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<script>
   function toggleMenu() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
   }
 </script>
 
-  </body>
-</html>
